@@ -1,0 +1,13 @@
+
+<div class="names">
+    {{firstName}}
+    <div class="counter">
+    {{counter}}
+    <button  (click)="increment()">Add by 5</button>
+    <button  (click)="decrement()"> Sub by 10</button>
+    </div>
+    <form>
+        <input  #name  type="text" placeholder="email" />
+        <button type="submit"   (click)="alertName(name.value)">Submit</button>
+    </form>
+</div>
